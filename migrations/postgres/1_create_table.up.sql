@@ -1,0 +1,9 @@
+CREATE TABLE posts (
+  id BIGINT NOT NULL PRIMARY KEY,
+  user_id BIGINT NOT NULL,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  deleted_at BIGINT DEFAULT 0,
+  updated_at TIMESTAMP
+);
